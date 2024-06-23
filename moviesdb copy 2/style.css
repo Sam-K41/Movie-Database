@@ -1,0 +1,76 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+body {
+  overflow: auto; /* Allow body scroll */
+  height: 100vh;
+  background: none; /* Remove background color to use background image */
+  position: relative; /* Ensure the body is positioned relative for absolute positioning */
+}
+
+canvas#canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+#movieList {
+  max-height: calc(100vh - 150px); /* Ensure it fits within the viewport */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 20px; /* Add margin to separate from other elements */
+}
+
+#movieList div, #movieDetails {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#movieList div img, #movieDetails img {
+  max-width: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#movieList div h2, #movieDetails h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#castList div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#castList img {
+  max-width: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#castList p {
+  margin: 0;
+}
